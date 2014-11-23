@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA1D8ECE-8D02-44E8-9DE1-D33C2F8BFD1F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>others\App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AtomicNET</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AtomicNET</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Celda.resx">
+      <DependentUpon>Celda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flecha.resx">
+      <DependentUpon>Flecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ATOMIC.resx">
+      <DependentUpon>ATOMIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\done.resx">
+      <DependentUpon>done.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\doneHi.resx">
+      <DependentUpon>doneHi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\gotoLevelForm.resx">
+      <DependentUpon>gotoLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\howto.resx">
+      <DependentUpon>howto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shortcuts.resx">
+      <DependentUpon>Shortcuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muralla.resx">
+      <DependentUpon>Muralla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultado.resx">
+      <DependentUpon>Resultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Celda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColeccionCelda.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColeccionFlecha.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColeccionMuralla.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColeccionResultado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Flecha.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ATOMIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\doneHi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\gotoLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\howto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Muralla.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="others\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resultado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scores.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Tablero.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Timer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="others\App.ico" />
+    <Content Include="others\blank.ico" />
+    <Content Include="others\Flag.ico" />
+    <EmbeddedResource Include="Resources\bola_ab.bmp" />
+    <EmbeddedResource Include="Resources\bola_abcdefgh.bmp" />
+    <EmbeddedResource Include="Resources\bola_ac.bmp" />
+    <EmbeddedResource Include="Resources\bola_ace.bmp" />
+    <EmbeddedResource Include="Resources\bola_aceg.bmp" />
+    <EmbeddedResource Include="Resources\bola_acf.bmp" />
+    <EmbeddedResource Include="Resources\bola_acfg.bmp" />
+    <EmbeddedResource Include="Resources\bola_acg.bmp" />
+    <EmbeddedResource Include="Resources\bola_ad.bmp" />
+    <EmbeddedResource Include="Resources\bola_adf.bmp" />
+    <EmbeddedResource Include="Resources\bola_adg.bmp" />
+    <EmbeddedResource Include="Resources\bola_aeg.bmp" />
+    <EmbeddedResource Include="Resources\bola_af.bmp" />
+    <EmbeddedResource Include="Resources\bola_ag.bmp" />
+    <EmbeddedResource Include="Resources\bola_ah.bmp" />
+    <EmbeddedResource Include="Resources\bola_bc.bmp" />
+    <EmbeddedResource Include="Resources\bola_bcf.bmp" />
+    <EmbeddedResource Include="Resources\bola_bcfg.bmp" />
+    <EmbeddedResource Include="Resources\bola_bcg.bmp" />
+    <EmbeddedResource Include="Resources\bola_bd.bmp" />
+    <EmbeddedResource Include="Resources\bola_bdf.bmp" />
+    <EmbeddedResource Include="Resources\bola_bdfh.bmp" />
+    <EmbeddedResource Include="Resources\bola_bdg.bmp" />
+    <EmbeddedResource Include="Resources\bola_bdh.bmp" />
+    <EmbeddedResource Include="Resources\bola_be.bmp" />
+    <EmbeddedResource Include="Resources\bola_beg.bmp" />
+    <EmbeddedResource Include="Resources\bola_beh.bmp" />
+    <EmbeddedResource Include="Resources\bola_bfg.bmp" />
+    <EmbeddedResource Include="Resources\bola_bfh.bmp" />
+    <EmbeddedResource Include="Resources\bola_bg.bmp" />
+    <EmbeddedResource Include="Resources\bola_bh.bmp" />
+    <EmbeddedResource Include="Resources\bola_cd.bmp" />
+    <EmbeddedResource Include="Resources\bola_ce.bmp" />
+    <EmbeddedResource Include="Resources\bola_ceg.bmp" />
+    <EmbeddedResource Include="Resources\bola_ceh.bmp" />
+    <EmbeddedResource Include="Resources\bola_cf.bmp" />
+    <EmbeddedResource Include="Resources\bola_cfg.bmp" />
+    <EmbeddedResource Include="Resources\bola_cfh.bmp" />
+    <EmbeddedResource Include="Resources\bola_ch.bmp" />
+    <EmbeddedResource Include="Resources\bola_de.bmp" />
+    <EmbeddedResource Include="Resources\bola_df.bmp" />
+    <EmbeddedResource Include="Resources\bola_dfh.bmp" />
+    <EmbeddedResource Include="Resources\bola_dg.bmp" />
+    <EmbeddedResource Include="Resources\bola_ef.bmp" />
+    <EmbeddedResource Include="Resources\bola_eg.bmp" />
+    <EmbeddedResource Include="Resources\bola_eh.bmp" />
+    <EmbeddedResource Include="Resources\bola_fg.bmp" />
+    <EmbeddedResource Include="Resources\bola_fh.bmp" />
+    <EmbeddedResource Include="Resources\bola_gh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_AACG.bmp" />
+    <EmbeddedResource Include="Resources\carbono_abdf.bmp" />
+    <EmbeddedResource Include="Resources\carbono_abeg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_abeh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_acC.bmp" />
+    <EmbeddedResource Include="Resources\carbono_ACCG.bmp" />
+    <EmbeddedResource Include="Resources\carbono_acD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_aceg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_acf.bmp" />
+    <EmbeddedResource Include="Resources\carbono_adD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_adef.bmp" />
+    <EmbeddedResource Include="Resources\carbono_adfe.bmp" />
+    <EmbeddedResource Include="Resources\carbono_adg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_aeB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_aeD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_afB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_aG.bmp" />
+    <EmbeddedResource Include="Resources\carbono_agB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_agC.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bcdg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_BD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bdD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bdeg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bdfg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bdfh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bdg.bmp" />
+    <EmbeddedResource Include="Resources\carbono_BDGG.bmp" />
+    <EmbeddedResource Include="Resources\carbono_beD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_befh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_begh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bgC.bmp" />
+    <EmbeddedResource Include="Resources\carbono_bhC.bmp" />
+    <EmbeddedResource Include="Resources\carbono_CCFH.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cdeh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cdfh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_ceA.bmp" />
+    <EmbeddedResource Include="Resources\carbono_ceD.bmp" />
+    <EmbeddedResource Include="Resources\carbono_CEEG.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cfA.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cfgh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cfh.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cgA.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cgC.bmp" />
+    <EmbeddedResource Include="Resources\carbono_cH.bmp" />
+    <EmbeddedResource Include="Resources\carbono_chC.bmp" />
+    <EmbeddedResource Include="Resources\carbono_dfA.bmp" />
+    <EmbeddedResource Include="Resources\carbono_dgA.bmp" />
+    <EmbeddedResource Include="Resources\carbono_eE.bmp" />
+    <EmbeddedResource Include="Resources\carbono_egA.bmp" />
+    <EmbeddedResource Include="Resources\carbono_egB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_ehB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_faB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_fF.bmp" />
+    <EmbeddedResource Include="Resources\carbono_fhB.bmp" />
+    <EmbeddedResource Include="Resources\carbono_gF.bmp" />
+    <EmbeddedResource Include="Resources\carbono_gG.bmp" />
+    <EmbeddedResource Include="Resources\cloro_b.bmp" />
+    <EmbeddedResource Include="Resources\cloro_d.bmp" />
+    <EmbeddedResource Include="Resources\cloro_f.bmp" />
+    <EmbeddedResource Include="Resources\cloro_h.bmp" />
+    <EmbeddedResource Include="Resources\FlechaDw.bmp" />
+    <EmbeddedResource Include="Resources\FlechaLt.bmp" />
+    <EmbeddedResource Include="Resources\FlechaRt.bmp" />
+    <EmbeddedResource Include="Resources\FlechaUp.bmp" />
+    <EmbeddedResource Include="Resources\fluor_a.bmp" />
+    <EmbeddedResource Include="Resources\fluor_e.bmp" />
+    <EmbeddedResource Include="Resources\forforo_cegA.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_a.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_b.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_c.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_d.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_e.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_f.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_g.bmp" />
+    <EmbeddedResource Include="Resources\hidrogeno_h.bmp" />
+    <EmbeddedResource Include="Resources\horizontal.bmp" />
+    <EmbeddedResource Include="Resources\logo.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_aB.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_ace.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_acf.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_acg.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_adf.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_adg.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_bD.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_bdg.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_beg.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_beh.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_cA.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_ceg.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_ceh.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_cfh.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_E.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_eA.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_fB.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_gA.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_H.bmp" />
+    <EmbeddedResource Include="Resources\nitrogeno_hB.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_A.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_AA.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_ad.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_ae.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_af.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_ah.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_B.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_ba.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_bd.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_be.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_bf.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_bg.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_bh.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_C.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_cd.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_ce.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_cg.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_ch.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_D.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_df.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_dg.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_dh.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_EE.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_fg.bmp" />
+    <EmbeddedResource Include="Resources\oxigeno_GG.bmp" />
+    <EmbeddedResource Include="Resources\sulfuro_bh.bmp" />
+    <EmbeddedResource Include="Resources\sulfuro_chCD.bmp" />
+    <EmbeddedResource Include="Resources\sulfuro_D.bmp" />
+    <EmbeddedResource Include="Resources\sulfuro_fh.bmp" />
+    <EmbeddedResource Include="Resources\vertical.bmp" />
+    <EmbeddedResource Include="Resources\wall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
